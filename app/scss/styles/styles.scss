@@ -1,0 +1,310 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+.carousel {
+    .carousel-indicators {
+        li {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .active {
+            background-color: #ec1a61;
+        }
+    }
+
+}
+
+.carousel-item .carousel-caption {
+    bottom: 30%;
+    button {
+        background-color: #ec1a61;
+        color: white;
+        font-size: bold;
+    }
+}
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 37px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
+.footer {
+    background-color: #222222;
+    height: 100%;
+    color: white;
+}
+.shop {
+    .container {
+        .category {
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+        .horizontal {
+            width: 3rem;
+            height: 3px;
+            margin: auto;
+            background-color: #3646b5;
+            margin-bottom: 1.5rem;
+        }
+        .row {
+            .card {
+                box-shadow: 5px 10px 18px #8888884f;
+                margin-bottom: 1rem;
+                .card-img-top {
+                    width: 60%;
+                    margin: auto;
+                    margin-top: 1rem;
+                }
+                .card-body {
+                    padding: 1.15rem;
+                    h4 {
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        margin-bottom: 0.3rem;
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: 20px;
+                        margin-bottom: 0.5rem;
+                    }
+                    button {
+                        background-color: #ec1a61;
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                    }
+                    .star {
+                        .fa-star.checked {
+                            color: orange;
+                        }
+                        .fa-star {
+                            color: #999999;
+                            margin: 0;
+                            padding: 0;
+                            font-size: 1rem;
+                            width: 1.1rem;
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pagination {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        .page-item {
+            margin: 0 0.3rem;
+        }
+    }
+}
+.footer {
+    .first {
+        padding-top: 1.5rem;
+    }
+    .social {
+        margin-bottom: 1rem;
+    }
+    p {
+        margin-bottom: 0.7rem;
+    }
+    .copy {
+        margin-top: 2rem;
+    }
+}
+.slide {
+    h2 {
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    button {
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+.head {
+    .navbar-brand {
+        padding: 0;
+        img {
+            // width: 4rem;
+            height: 2.5rem;
+        }
+    }
+    .navbar-collapse {
+        .nav-item {
+            margin-right: 0.6rem;
+            &:hover .nav-link {
+                color: #ec1a61;
+            }
+        }
+        .nav-item.active .nav-link{
+            color: #ec1a61;
+        }
+    }
+} 
+@media (max-width: 576px) {
+    .carousel {       
+        img {
+            height: 300px;
+        }
+        .carousel-indicators {
+            bottom: 0;
+            li {
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .carousel-inner {
+            .carousel-caption {
+                width: 100%;
+                left: 0;
+                right: 0;
+                bottom: 15%;
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+    .shop {
+        .container {
+            .row {
+                .card {
+                    .card-body {
+                        h4 {
+                            font-size: 1.1rem;
+                            margin-bottom: 0;
+                        }
+                        p {
+                            font-size: 1.1rem;
+                        }
+                        .star{
+                            .fa-star {
+                                width: 0.8rem;
+                                font-size: 0.8rem;
+                            }
+                        }
+                        button {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .head {
+        .navbar {
+            box-shadow: 5px 10px 18px #8888884f;
+            .navbar-brand {
+                img {
+                    height: 2rem;
+                }
+            }
+            // .navbar-collapse {
+            //     text-align: center;
+            // }
+        }
+        
+    }
+}
+.head nav.menu-change {
+    height: 2.8rem;
+    box-shadow: 5px 10px 18px #8888884f;
+}
+@media (min-width: 992px) {
+    .head {
+        nav {
+            transition: 0.2s;
+            height: 3.5rem;
+        }
+    }
+} 
+@media (max-width: 768) {
+    .carousel {
+        img {
+            height: 220px;
+        }
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
